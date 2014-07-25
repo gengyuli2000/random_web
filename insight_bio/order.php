@@ -9,7 +9,7 @@
 <body>
 
 <?php
-  $dbc = mysqli_connect('localhost', 'root', '', 'orderdata')
+  $dbc = mysqli_connect('localhost', 'root', '', 'insight_bio_database')
     or die('Error connecting to MySQL server.');
 
   $name = $_POST['name'];
@@ -21,10 +21,10 @@
   $postcode = $_POST['postcode'];
   $product = $_POST['product'];
   $msg = $_POST['msg'];
-  $current_time = getdate(time());
+  $current_time = date('Y-m-d H:i');
 
-  $query = "INSERT INTO orders (name, email, phone, institution, address, product, msg)  VALUES ('$name', '$email', '$phone',
-  '$institution', '$address', '$product', '$msg')";
+  $query = "INSERT INTO orders (name, email, phone, institution, address, city, postcode, product, time, msg)  
+            VALUES ('$name', '$email', '$phone', '$institution', '$address', '$city', '$postcode', '$product', '$current_time', '$msg')";
 
 mysqli_query($dbc, $query)
     or die('Error querying database.');

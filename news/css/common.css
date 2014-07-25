@@ -1,0 +1,121 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: arial,sans-serif;
+	font-weight: lighter;
+	-webkit-font-smoothing: antialiased;
+}
+
+/*visuals */
+
+footer{
+	background-color:#2D2D2D;
+	height: 280px;
+}
+footer p{
+	color: #808080;
+}
+footer a{
+	color: #D5D5D5;
+	text-decoration: none;
+}
+footer li{
+	list-style: none;
+}
+
+/*nav*/
+nav a {
+	color:#1b8dbe; 							/* text color */
+	padding:.2em 1em;
+	font-size: 22px;					/* padding around link text */
+	}  
+nav li li a{
+	font-size: 18px;
+}					
+nav li:hover > a {
+	color:#fff; 							/* hover text color */
+	background-color:#66CCCC;					/* hover background color */
+	}
+nav li a:active {
+	background:#CCFFFF; 						/* b/g hilite when clicked */
+	color:#ccc;								/* text color hilite when clicked */
+
+	}	
+nav li ul {
+	width:8em;
+	} 		/* width of 2nd, 3rd level menus */
+
+/*section*/
+article section{
+	width: 100%;
+	height: 920px;
+}
+
+
+
+/*functional styling*/
+
+
+
+/*nav*/
+
+nav ul{
+	position: fixed;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+nav li {  
+	list-style-type:none; /* removes default bullets off lists */
+	position:relative; /* position context for child list */
+	margin-bottom: 7px;
+	}
+nav li a {   
+	display:block; /* makes link fill li */
+	text-decoration:none; /* removes link underlining */
+	}
+
+
+
+/* level 2*/
+nav li ul {
+	margin: 0;
+	display:none; /* hides levels 2*/
+	position:absolute; /* position relative to parent menu */
+	left:100%; /* aligns left of sub-menu to parent */
+	top:0%; /* aligns to bottom of parent */
+	}
+nav li:hover > ul {
+	display:block; /* displays menu when parent hovered */
+	}
+nav li li {
+	position:relative; /* position context for child list */
+	}
+
+footer ul{
+	margin: 0px auto;
+	width: 500px;
+	padding-top: 100px;
+}
+footer li{
+	float: left;
+	padding: 10px;
+	margin-left: 30px;
+}
+footer li a{
+	display: block;
+}
+footer p{
+	clear:both;
+	position: relative;
+	
+	width: 430px;
+	margin: 0px auto;
+	margin-top: 100px;
+}
+
+.centre{
+	width:640px;
+	margin: 0px auto;
+
+}
+

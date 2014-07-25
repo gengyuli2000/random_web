@@ -1,0 +1,23 @@
+/*header*/
+header{
+	background-image: url(../resources/bg_pic_3.jpg);
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 920px;
+}
+header h1 a{
+	text-decoration: none;
+	color:white;
+	font-size: 68px;
+	letter-spacing: 5px;
+}
+header p{
+	color:white;
+	font-size: 34px;
+	letter-spacing: 2px;
+}
+/*header*/
+header #inner{
+	padding-top: 340px;
+	padding-left: 340px;
+}

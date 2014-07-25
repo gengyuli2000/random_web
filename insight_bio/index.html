@@ -2,9 +2,11 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="css/styles_index.css" type="text/css">
+	<link rel="stylesheet" href="css/common.css" type="text/css">
+	<link rel="stylesheet" href="css/style_index.css" type="text/css">
 	<script src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/nav.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title> 广州 </title>
 </head>
@@ -13,11 +15,15 @@
 		<nav>
 			<div id="nav_inner">
 			<ul><!--main nav start-->
-				<li><a href = "product.html">产品</a>
+				<li class="active"><a href = "index.html">主页</a></li>
+				<li><a href = "product.php">产品</a>
 						<ul><!--product level 2 start-->
-							<li><a href="#">产品1</a></li>
-							<li><a href="#">产品2</a></li>
-							<li><a href="#">产品3</a></li>
+							<li><a href="#">分子生物学</a></li>
+							<li><a href="#">基因检测</a></li>
+							<li><a href="#">免疫学</a></li>
+							<li><a href="#">神经生物学</a></li>
+							<li><a href="#">试剂/耗材</a></li>
+							<li><a href="#">生物活性蛋白</a></li>
 						</ul>
 				</li><!--product level 2 end--> 
 				<li><a href = "service.html">服务</a>
@@ -25,10 +31,14 @@
 						<li><a href="#">服务1</a></li>
 						<li><a href="#">服务2</a></li>
 						<li><a href="#">服务3</a></li>
+						<li><a href="#">服务1</a></li>
+						<li><a href="#">服务2</a></li>
+						<li><a href="#">服务3</a></li>
 					</ul><!--service level 2 end-->
 				</li>
 				<li><a href = "support.html">技术</a></li>
 				<li><a href = "order.html">订购</a></li>
+				<li><a href = "admin.php">管理员</a></li>
 			</ul><!--main nav end-->
 		</div>
 		</nav>
@@ -61,7 +71,14 @@
 
 	<!--footer start-->	
 	<footer>
-		<p>Hand written by Gengyu Li - Powered by jQuery and PHP</p>
+			<ul>
+				<li><a href="#">联系地址</a></li>
+				<li><a href="#">关于我们</a></li>
+				<li><a href="#">公司新闻</a></li>
+				<li><a href="#">管理团队</a></li>
+			</ul>
+			<p>Hand written by Gengyu Li - Powered by jQuery and PHP</p>
+		
 	</footer> <!--footer end-->
 
 

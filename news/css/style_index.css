@@ -1,0 +1,50 @@
+/*header*/
+header{
+	background-image: url(../resources/bg_pic_3.jpg);
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 340px;
+}
+header h1 a{
+	text-decoration: none;
+	color:white;
+	font-size: 68px;
+	letter-spacing: 5px;
+}
+header p{
+	color:white;
+	font-size: 34px;
+	letter-spacing: 2px;
+}
+/*header*/
+header #inner{
+	padding-top: 80px;
+	padding-left: 720px;
+}
+
+section{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+section a{
+	text-decoration: none;
+	font-size: 24px;
+	color:#1b8dbe;
+	padding:10px;
+	margin-bottom: 20px;
+}
+section p{
+	font-size: 16px;
+	padding: 10px;
+	color:#D5D5D5;
+	margin-bottom: 50px;
+}
+section p:nth-child(odd){
+	background-color: white;
+}
+section p:nth-child(even){
+	background-color: #eee;
+}
+section p:after{
+	content:"我擦我擦";
+}
